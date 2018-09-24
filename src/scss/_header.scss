@@ -1,0 +1,101 @@
+.header {
+  width: 100%;
+  height: calc(100vh + 3.492vw);
+  margin-bottom: -3.492vw;
+  background-image: url('../montysot/img/header-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .6em 1.2em;
+  height: 3em;
+  line-height: 1em;
+  background-color: #fff;
+}
+
+.logo {
+  align-self: center;
+  display: flex; 
+  text-decoration: none; 
+  outline: none;
+}
+.logo__image {
+  width: auto;
+  height: 2.8em;
+}
+
+.mainMenu {
+  align-self: center;
+  display: flex;
+}
+.mainMenu__list {
+  align-self: center;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.mainMenu__item {
+  list-style: none;
+  padding: .6em;
+}
+.mainMenu__link {
+  color: #333;
+  text-decoration: none;
+}
+.mainMenu__link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: .1em;
+  border-bottom: 2px solid #333;
+  margin-bottom: -.2em;
+
+  transform-origin: center bottom;
+  transform: scaleX(0);
+  transition: transform 100ms ease-in-out;
+}
+.mainMenu__link:hover::after {
+  transform: scaleX(1);
+}
+
+.iconSet {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.iconSet__item {  
+  list-style: none;
+  padding: 0 .3em;
+}
+.iconSet__link {
+  display: inline-block;
+  height: 1.6em;
+  width: 1.6em;
+  border: 1px solid #333;
+  border-radius: 50%;
+  background-size: contain;
+  outline: none;  
+  opacity: .4;
+  transition: opacity 100ms ease-in-out;              
+}
+.iconSet__link:hover {
+  opacity: 1;
+}
+.iconSet__link_mapMarker {
+  background-image: url('../montysot/img/svg/map-marker.svg');
+}
+.iconSet__link_search {
+  background-image: url('../montysot/img/svg/search.svg');
+}
+.iconSet__link_user {
+  background-image: url('../montysot/img/svg/user.svg');
+}
+.iconSet__link_shoppingCart {
+  background-image: url('../montysot/img/svg/shopping-cart.svg');
+}

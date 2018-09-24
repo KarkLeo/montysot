@@ -1,0 +1,35 @@
+.triggerBlock1 {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 100;  
+  padding: 1em;
+  margin-top: 3.492vw;
+  margin-bottom: 3.492vw;
+}
+.triggerBlock1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 110vw;
+  height: 5vw;
+  background-color: #fff;
+  transform-origin: 0 0;
+  transform: rotate(-2deg);
+}
+.triggerBlock1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 110vw;
+  height: 5vw;
+  background-color: #fff;
+  transform-origin: 0 100%;
+  transform: rotate(2deg);
+}

@@ -1,0 +1,120 @@
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+}
+.timer__clockface {
+  display: flex;
+  align-items: center;
+  height: 2em;
+  background-color: #02466b;
+  line-height: 2em;
+  color: #c0e40e;
+  margin-right: 2em;
+}
+.timer__clockface::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  border-left: .6em solid #02466b;
+  border-right: .6em solid transparent;
+  border-top: 1em solid transparent; 
+  border-bottom: 1em solid transparent; 
+  margin-right: -1.2em;
+  line-height: 2em;
+}
+.timer__icon {
+  display: block;
+  height: 1.8em;
+  width: 1.8em;
+  background-image: url('../montysot/img/svg/alarm.svg');
+  background-size: contain;
+}
+.timer__value {
+  display: block;
+  font-weight: bold;
+  line-height: 2em;
+  margin-right: .3em;
+}
+.timer__description {
+  line-height: 1em;
+  white-space: nowrap;
+}
+
+.contentBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 4em;
+}
+.contentBlock__textBlock {
+  width: 50%;
+  text-align: center;
+  padding: 0 2em;
+}
+.contentBlock__title {
+  color: #02466b;
+  font-size: 2em;
+}
+.contentBlock__text {
+  font-size: 1em;
+  line-height: 1.6em;
+}
+.contentBlock__subtitle {
+  font-size: 1em;
+  line-height: 1.6em;  
+  color: #02466b;
+}
+.contentBlock__imgBlock {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentBlock__img {
+  max-height: 50vh;
+  width: auto;
+}
+
+.fuature__title {
+  text-align: center;  
+  font-size: 1em;
+  line-height: 1.6em;
+}
+.fuature__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.feature__item {
+  list-style: none;
+  display: block;
+  width: 8em;
+  height: 8em;
+  background-color: #02466b;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 8em;
+  margin: 1em;
+}
+
+.textTrigger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  position: relative;
+  z-index: 50;
+}
+.textTrigger__title {
+  max-width: 60%;
+  text-align: center;
+  font-size: 2.4em;
+  line-height: 1.2em;
+  color: #fff;
+  text-shadow: 0 0 .2em #333;
+}
