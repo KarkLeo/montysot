@@ -67,6 +67,23 @@
   line-height: 1.6em;  
   color: #02466b;
 }
+.contentBlock__button {
+  display: inline-block;
+  margin: 1em;
+  padding: 0.4em 1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: .3em;
+  background-color: #fa5b31;
+  border: .1em solid transparent;
+  transition: all 100ms ease-in-out;
+}
+.contentBlock__button:hover {
+  border-color: #fa5b31;
+  background-color: transparent;
+  color: #fa5b31;
+}
 .contentBlock__imgBlock {
   width: 50%;
   display: flex;
@@ -77,6 +94,7 @@
   max-height: 50vh;
   width: auto;
 }
+
 
 .fuature__title {
   text-align: center;  
@@ -117,4 +135,52 @@
   line-height: 1.2em;
   color: #fff;
   text-shadow: 0 0 .2em #333;
+}
+
+.whiteTrigger {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 100;  
+  padding: 1em;
+  margin-top: 3.492vw;
+  margin-bottom: 3.492vw;
+}
+.whiteTrigger::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 110vw;
+  height: 5vw;
+  background-color: #fff;
+}
+.whiteTrigger::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 110vw;
+  height: 5vw;
+  background-color: #fff;
+}
+
+.imageTrigger {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  background-size: cover;
+  background-attachment: fixed;  
+  margin-top: -3.492vw;
+  margin-bottom: -3.492vw;
+}
+.imageTrigger::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, .4);
 }
