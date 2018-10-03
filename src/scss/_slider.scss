@@ -102,3 +102,36 @@
   right: 0;
   border-radius: .2em 0 0 .2em;
 }
+
+@media screen and (orientation: portrait), 
+(max-width: 800px) {
+  .slider {
+    height: 100vh;
+  }
+  //----- Sliders -----
+  .slider__title {
+    font-size: 1.8em;
+  }
+  //----- Dots -----
+  .slider__dots {
+    top: 90vh;
+  }
+  .slider__dotsItem {
+    margin: .3em .4em;
+  }
+  .slider__dotsItem:hover {
+    background-color: #fff;
+  }
+  //----- Side buttons ------
+  .slider__buttomLeft,
+  .slider__buttomRight {
+    margin-top: -2.9em;
+    padding: 2.4em .6em;
+    background-color: transparent;
+  }
+  .slider__buttomLeft:hover,
+  .slider__buttomRight:hover {
+    opacity: .3;
+    background-color: transparent;
+  }
+}

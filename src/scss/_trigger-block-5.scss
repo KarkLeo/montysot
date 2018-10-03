@@ -1,3 +1,7 @@
+.triggerBlock5 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .triggerBlock5::before {
   top: 0;
   left: 0;
@@ -5,8 +9,13 @@
   transform: rotate(-2deg);
 }
 .triggerBlock5::after {
-  bottom: 0;
-  right: 0;
-  transform-origin: 100% 100%;
-  transform: rotate(-2deg);
+  display: none;
+}
+
+@media screen and (orientation: portrait), 
+(max-width: 800px) {
+  .triggerBlock5::before,
+  .triggerBlock5::after {
+    display: none;
+  }
 }

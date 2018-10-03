@@ -11,3 +11,11 @@
   transform-origin: 100% 100%;
   transform: rotate(-2deg);
 }
+
+@media screen and (orientation: portrait), 
+(max-width: 800px) {
+  .triggerBlock3::before,
+  .triggerBlock3::after {
+    display: none;
+  }
+}
