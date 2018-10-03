@@ -1,0 +1,104 @@
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh + 3.492vw);
+}
+
+.slider__list {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+//----- Sliders -----
+
+.slider__item {
+  display: none;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+.slider__item:nth-child(2) {
+  background-color: green;
+}
+.slider__item:nth-child(3) {
+  background-color: yellow;
+}
+.slider__item_active {
+  display: flex;
+}
+.slider__title {
+  margin: 0;
+  max-width: 60%;
+  text-align: center;
+  font-size: 2.4em;
+  line-height: 1.2em;
+  color: #fff;
+  text-shadow: 0 0 .2em #333;
+}
+
+//----- Dots -----
+
+.slider__dots {
+  position: absolute;
+  top: calc(100vh - 3.492vw);
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.slider__dotsItem {
+  cursor: pointer;
+  list-style: none;
+  display: block;
+  width: .6em;
+  height: .6em;
+  margin: .3em;
+  border-radius: 50%;
+  border: .1em solid #fff;
+  transition: all 100ms ease;
+}
+.slider__dotsItem:hover {
+  background-color: rgba(255, 255, 255, .6);
+}
+.slider__dotsItem_active {
+  background-color: #fff;
+  cursor: default;
+}
+.slider__dotsItem_active:hover {
+  background-color: #fff;
+}
+
+//----- Side buttons ------
+
+.slider__buttomLeft,
+.slider__buttomRight {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;  
+  margin-top: -1.1em;
+  color: #fff;
+  font-size: 2.4em;
+  line-height: 1em;
+  padding: .6em;
+  background-color: rgba(51, 51, 51, .6);
+  border-radius: 0 .2em .2em 0;
+  opacity: .3;
+  transition: all 100ms ease;
+}
+.slider__buttomLeft:hover,
+.slider__buttomRight:hover {
+  opacity: 1;
+}
+.slider__buttomRight {
+  right: 0;
+  border-radius: .2em 0 0 .2em;
+}
