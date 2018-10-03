@@ -236,3 +236,11 @@
     max-width: 85%;
   }
 }
+
+@media screen and (orientation: landscape) 
+and (max-width: 800px)
+and (min-width: 400px) {
+  .contentBlock__img {
+    max-height: 90vh;
+  }
+}
