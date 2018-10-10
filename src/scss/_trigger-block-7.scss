@@ -1,0 +1,21 @@
+
+.triggerBlock7::before {
+  top: 0;
+  right: 0;
+  transform-origin: 100% 0;
+  transform: rotate(2deg);
+}
+.triggerBlock7::after {
+  bottom: 0;
+  right: 0;
+  transform-origin: 100% 100%;
+  transform: rotate(-2deg);
+}
+
+@media screen and (orientation: portrait), 
+(max-width: 800px) {
+  .triggerBlock7::before,
+  .triggerBlock7::after {
+    display: none;
+  }
+}

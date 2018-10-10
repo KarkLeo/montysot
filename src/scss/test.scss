@@ -1,17 +1,3 @@
-html {
-}
-body {
-}
-
-.content {
-  width: 100%;
-  overflow: hidden;
-}
-
-@import '_themes_default.scss';
-@import '_header.scss';
-@import '_slider.scss';
-@import '_trigger-block.scss';
 @import '_trigger-block-1.scss';
 @import '_trigger-block-2.scss';
 @import '_trigger-block-3.scss';
@@ -21,4 +7,3 @@ body {
 @import '_trigger-block-7.scss';
 @import '_trigger-block-8.scss';
 @import '_trigger-block-9.scss';
-@import '_footer.scss';

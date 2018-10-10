@@ -1,0 +1,101 @@
+.triggerBlock1::before {
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  transform: rotate(-2deg); }
+
+.triggerBlock1::after {
+  bottom: 0;
+  left: 0;
+  transform-origin: 0 100%;
+  transform: rotate(2deg); }
+
+@media screen and (orientation: portrait), (max-width: 800px) {
+  .triggerBlock1::before,
+  .triggerBlock1::after {
+    display: none; } }
+
+.triggerBlock2 {
+  background-image: url("../montysot/img/trigger-block-2.jpg"); }
+
+.triggerBlock3::before {
+  top: 0;
+  right: 0;
+  transform-origin: 100% 0;
+  transform: rotate(2deg); }
+
+.triggerBlock3::after {
+  bottom: 0;
+  right: 0;
+  transform-origin: 100% 100%;
+  transform: rotate(-2deg); }
+
+@media screen and (orientation: portrait), (max-width: 800px) {
+  .triggerBlock3::before,
+  .triggerBlock3::after {
+    display: none; } }
+
+.triggerBlock4 {
+  background-image: url("../montysot/img/trigger-block-4.jpg"); }
+
+.triggerBlock5 {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.triggerBlock5::before {
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  transform: rotate(-2deg); }
+
+.triggerBlock5::after {
+  bottom: 0;
+  left: 0;
+  transform-origin: 0 100%;
+  transform: rotate(2deg); }
+
+@media screen and (orientation: portrait), (max-width: 800px) {
+  .triggerBlock5::before,
+  .triggerBlock5::after {
+    display: none; } }
+
+.triggerBlock6 {
+  background-image: url("../montysot/img/trigger-block-6.jpg"); }
+
+.triggerBlock7::before {
+  top: 0;
+  right: 0;
+  transform-origin: 100% 0;
+  transform: rotate(2deg); }
+
+.triggerBlock7::after {
+  bottom: 0;
+  right: 0;
+  transform-origin: 100% 100%;
+  transform: rotate(-2deg); }
+
+@media screen and (orientation: portrait), (max-width: 800px) {
+  .triggerBlock7::before,
+  .triggerBlock7::after {
+    display: none; } }
+
+.triggerBlock8 {
+  background-image: url("../montysot/img/trigger-block-8.jpg"); }
+
+.triggerBlock9 {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.triggerBlock9::before {
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  transform: rotate(-2deg); }
+
+.triggerBlock9::after {
+  display: none; }
+
+@media screen and (orientation: portrait), (max-width: 800px) {
+  .triggerBlock9::before,
+  .triggerBlock9::after {
+    display: none; } }
